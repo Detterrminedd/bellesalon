@@ -4,10 +4,8 @@
 }
 
 body {
-  margin: 0 1em;
 }
 .landing-page {
-  height: 100vh;
   .logo {
     img {
       width: 3em;
@@ -21,6 +19,7 @@ body {
     width: 50vw;
     top: 0;
     right: 0;
+    left: unset;
   }
   .hero-img {
     position: absolute;
