@@ -2,33 +2,33 @@
   margin: 0;
   padding: 0;
 }
-
-body {
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  img {
+    width: 4em;
+  }
 }
 .landing-page {
-  .logo {
-    img {
-      width: 3em;
-      margin: unset;
-    }
+  display: grid;
+  grid-template-columns: 1fr;
+  background: linear-gradient(-90deg, #fa7c30 50%, rgba(0, 0, 0, 0) 50%);
+  width: 100%;
+  height: 40em;
+  place-items: end center;
+  img {
+    width: 80%;
   }
-  .right-block {
-    position: absolute;
-    background-color: #dcc29c;
-    height: 100vh;
-    width: 50vw;
-    top: 0;
-    right: 0;
-    left: unset;
-  }
-  .hero-img {
-    position: absolute;
-    width: 100vw;
-    display: grid;
-    place-items: center;
-    bottom: 0;
-    img {
-      width: 90%;
-    }
-  }
+  // .hero-img {
+  //   margin: 0;
+  //   padding: 0;
+  //   height: 40em;
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   place-items: bottom;
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
 }

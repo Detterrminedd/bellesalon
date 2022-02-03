@@ -3,30 +3,26 @@
   padding: 0;
 }
 
-.landing-page .logo img {
-  width: 3em;
-  margin: unset;
-}
-
-.landing-page .right-block {
+.logo {
   position: absolute;
-  background-color: #dcc29c;
-  height: 100vh;
-  width: 50vw;
   top: 0;
-  right: 0;
-  left: unset;
+  left: 0;
 }
 
-.landing-page .hero-img {
-  position: absolute;
-  width: 100vw;
+.logo img {
+  width: 4em;
+}
+
+.landing-page {
   display: grid;
-  place-items: center;
-  bottom: 0;
+  grid-template-columns: 1fr;
+  background: linear-gradient(-90deg, #fa7c30 50%, rgba(0, 0, 0, 0) 50%);
+  width: 100%;
+  height: 40em;
+  place-items: end center;
 }
 
-.landing-page .hero-img img {
-  width: 90%;
+.landing-page img {
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */
