@@ -1,13 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@200;300;400&display=swap");
+
+$font-huge: 6rem;
+$font-large: 4rem;
+$font-medium: 3rem;
+$font-small: 1.5rem;
+
 * {
   margin: 0;
   padding: 0;
 }
-.logo {
+
+// text-field
+.form__group {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  padding: 1em 0 0;
+  margin-top: 10px;
+  margin: 2em;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  outline: 0;
+  font-size: 16px;
+  color: #000000;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+}
+
+label,
+.form__field:focus ~ .form__label {
   position: absolute;
   top: 0;
-  left: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #070707;
+}
+
+.form__field:focus ~ .form__label {
+  color: #fa7c30;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #fa7c30;
+}
+.bttn {
+  display: block;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5em 1em;
+  border: 1px solid #fa7c30;
+  color: #fa7c30;
+  width: fit-content;
+  &:hover {
+    background: #fa7c30;
+    color: #ffffff;
+    transition: 0.4s;
+  }
+}
+// text-field end
+.logo {
+  position: absolute;
+  top: 1em;
+  left: 1em;
   img {
-    width: 4em;
+    width: 3em;
   }
 }
 .landing-page {
@@ -15,20 +88,152 @@
   grid-template-columns: 1fr;
   background: linear-gradient(-90deg, #fa7c30 50%, rgba(0, 0, 0, 0) 50%);
   width: 100%;
-  height: 40em;
+  height: 35em;
   place-items: end center;
   img {
-    width: 80%;
+    width: 90%;
   }
-  // .hero-img {
-  //   margin: 0;
-  //   padding: 0;
-  //   height: 40em;
-  //   display: grid;
-  //   grid-template-columns: 1fr;
-  //   place-items: bottom;
-  //   img {
-  //     width: 100%;
-  //   }
-  // }
+}
+
+.booking {
+  display: grid;
+  width: fit-content;
+  padding: 0.5em;
+  position: absolute;
+  margin-top: 1em;
+  right: 0;
+  border: 1.5px solid #fa7c30;
+  color: #fa7c30;
+  font-family: "Montserrat", sans-serif;
+}
+.headingg {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  margin-top: 1em;
+  h1 {
+    font-size: $font-huge;
+    opacity: 0.1;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    line-height: 0.65;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: $font-small;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    align-self: end;
+  }
+}
+.pg2 {
+  h1 {
+    font-size: $font-huge;
+    opacity: 0.1;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    line-height: 0.65;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: $font-small;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    align-self: end;
+  }
+}
+.features {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  span {
+    place-self: center start;
+  }
+}
+.youtube {
+  margin: auto 1em;
+  span {
+    font-family: "EB Garamond", serif;
+    // font-family: "Montserrat", sans-serif;
+    font-size: $font-small;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.services {
+  // background: url(../../assets/hair.png);
+  // background-attachment: fixed;
+  h1 {
+    font-family: "EB Garamond", serif;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+  }
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  img {
+    width: 100%;
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  // margin-top: 1em;
+  width: fit-content;
+  .box {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+}
+.book-now {
+  margin: auto 1em;
+  .steps {
+    display: grid;
+    text-align: center;
+    column-gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  .circle {
+    display: grid;
+    place-items: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 1px solid red;
+  }   
+}
+.expectation {
+  margin: auto 1em;
+}
+.testimo {
+  margin: auto 1em;
+}
+.appointment {
+  margin: auto 1em;
 }
