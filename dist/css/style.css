@@ -10,6 +10,7 @@
   padding: 1em 0 0;
   margin-top: 10px;
   margin: 2em;
+  margin-left: 0;
 }
 
 .form__field {
@@ -110,15 +111,16 @@ label,
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   place-items: center;
+  text-align: center;
   margin-top: 1em;
+  font-family: font-family-1;
 }
 
 .headingg h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   opacity: 0.1;
   grid-column: 1/-1;
   grid-row: 1/-1;
-  line-height: 0.65;
 }
 
 .headingg p {
@@ -126,23 +128,7 @@ label,
   font-size: 1.5rem;
   grid-row: 1/-1;
   grid-column: 1/-1;
-  align-self: end;
-}
-
-.pg2 h1 {
-  font-size: 6rem;
-  opacity: 0.1;
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  line-height: 0.65;
-}
-
-.pg2 p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  grid-row: 1/-1;
-  grid-column: 1/-1;
-  align-self: end;
+  place-self: end center;
 }
 
 .features {
@@ -156,20 +142,20 @@ label,
   place-self: center start;
 }
 
-.youtube {
-  margin: auto 1em;
+.des {
+  font-family: "EB Garamond", serif;
+  margin: 2em 1em 1em 1em;
 }
 
-.youtube span {
-  font-family: "EB Garamond", serif;
-  font-size: 1.5rem;
+.youtube {
+  margin: auto 1em;
 }
 
 .youtube p {
   font-family: "Montserrat", sans-serif;
 }
 
-.video-container {
+.youtube .video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
@@ -177,9 +163,9 @@ label,
   overflow: hidden;
 }
 
-.video-container iframe,
-.video-container object,
-.video-container embed {
+.youtube .video-container iframe,
+.youtube .video-container object,
+.youtube .video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -227,7 +213,6 @@ label,
 .book-now .steps {
   display: grid;
   text-align: center;
-  column-gap: 2em;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
 }
@@ -243,13 +228,34 @@ label,
 
 .expectation {
   margin: auto 1em;
+  font-family: "EB Garamond", serif;
+}
+
+.expectation p {
+  font-family: "Montserrat", sans-serif;
 }
 
 .testimo {
   margin: auto 1em;
+  font-family: "EB Garamond", serif;
+}
+
+.testimo p {
+  font-family: "Montserrat", sans-serif;
 }
 
 .appointment {
   margin: auto 1em;
+  font-family: "EB Garamond", serif;
+}
+
+.insta {
+  display: flex;
+  justify-content: start;
+  overflow: scroll;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  align-items: center;
+  column-gap: 5vw;
 }
 /*# sourceMappingURL=style.css.map */
