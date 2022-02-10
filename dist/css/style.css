@@ -1,7 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  right: 0;
+  z-index: 999;
+}
+
+.container-fluid {
+  display: block;
+  margin: auto;
+}
+
+.nav-link {
+  font-size: 1.1em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form__group {
@@ -84,14 +101,23 @@ label,
 .landing-page {
   display: grid;
   grid-template-columns: 1fr;
-  background: linear-gradient(-90deg, #fa7c30 50%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(-90deg, #ea5258 50%, rgba(0, 0, 0, 0) 50%);
   width: 100%;
-  height: 35em;
-  place-items: end center;
+  height: 32em;
+  place-items: end start;
 }
 
 .landing-page img {
   width: 90%;
+  place-self: end center;
+}
+
+.landing-page a {
+  display: none;
+}
+
+.landing-page div {
+  display: none;
 }
 
 .booking {
@@ -113,12 +139,11 @@ label,
   place-items: center;
   text-align: center;
   margin-top: 1em;
-  font-family: font-family-1;
 }
 
 .headingg h1 {
-  font-size: 5rem;
-  font-family: "EB Garamond", serif;
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
   opacity: 0.1;
   grid-column: 1/-1;
   grid-row: 1/-1;
@@ -126,7 +151,7 @@ label,
 
 .headingg p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   grid-row: 1/-1;
   grid-column: 1/-1;
   place-self: end center;
@@ -141,57 +166,165 @@ label,
 }
 
 .features span {
-  place-self: center;
   place-self: center start;
   font-family: "Montserrat", sans-serif;
 }
 
+.grid-fill {
+  margin: auto 5vw;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  column-gap: 1em;
+}
+
+.grid-fill div {
+  display: grid;
+  place-items: center;
+  object-fit: cover;
+}
+
+.grid-fill div img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.grid-fill div p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  align-items: center;
+  z-index: 999;
+  width: fit-content;
+  background: white;
+  color: black;
+  padding: 0.5em;
+  margin-top: -25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 27px -5px, rgba(0, 0, 0, 0.3) 0px 0px 56px -8px;
+}
+
 .des {
-  font-family: "EB Garamond", serif;
+  font-family: "Playfair Display", serif;
   margin: 2em 1em 1em 1em;
 }
 
 .youtube {
+  font-family: "Playfair Display", serif;
   margin: auto 1em;
   display: grid;
   place-items: center;
 }
 
 .youtube p {
+  margin-top: 1em;
   font-family: "Montserrat", sans-serif;
+  background: #ea5258;
+  padding: 3em;
+  border-radius: 3em 0 0 3em;
+  color: #ffffff;
 }
 
 .services {
+  background: url("../../assets/gal3.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
   display: grid;
   place-items: center;
 }
 
+.services .hidee {
+  display: none;
+}
+
+.services img {
+  object-fit: cover;
+  width: 100%;
+  height: 30em;
+}
+
 .services h1 {
   font-family: "EB Garamond", serif;
+  margin-top: 2em;
 }
 
 .services p {
   font-family: "Montserrat", sans-serif;
 }
 
-.services img {
+.services1 {
+  position: relative;
   width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.services1 h1 {
+  font-family: "EB Garamond", serif;
+  margin-top: 2em;
+}
+
+.services1 p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.services1 img {
+  width: 100%;
+}
+
+.services1 video {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 30vw 30vw 30vw;
+  grid-template-rows: 30vw 30vw;
   place-items: center;
+  overflow: hidden;
   width: fit-content;
+  margin: 3em;
+}
+
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .gallery .box {
-  background-color: black;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.gallery .box a {
+  cursor: pointer;
+}
+
+.gallery .box span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.gallery .box .bi {
+  color: #fff;
 }
 
 .book-now {
@@ -213,11 +346,17 @@ label,
   height: 2em;
   border-radius: 50%;
   border: 1px solid #fa7c30;
+  color: #fa7c30;
 }
 
 .expectation {
-  margin: auto 1em;
-  font-family: "EB Garamond", serif;
+  margin: auto 5vw;
+  margin-top: 1em;
+  font-family: "Playfair Display", serif;
+}
+
+.expectation h1 {
+  font-size: 2rem;
 }
 
 .expectation p {
@@ -225,11 +364,31 @@ label,
 }
 
 .testimo {
-  margin: auto 1em;
+  display: grid;
+  grid-template-columns: auto;
+  margin: auto 5vw;
+  column-gap: 2em;
+  place-items: center;
+}
+
+.testimo .headingg {
+  place-items: start;
+}
+
+.testimo .headingg p {
+  justify-self: start;
+  margin-left: 1em;
+}
+
+.testimo .testi img {
+  width: 13em;
+  border: 16px solid rgba(128, 128, 128, 0.151);
+  margin: 10px;
+  border-radius: 50%;
 }
 
 .testimo h1 {
-  font-family: "EB Garamond", serif;
+  font-family: "Playfair Display", serif;
 }
 
 .testimo p {
@@ -237,8 +396,12 @@ label,
 }
 
 .appointment {
-  margin: auto 1em;
-  font-family: "EB Garamond", serif;
+  margin: auto 5vw;
+  font-family: "Playfair Display", serif;
+}
+
+.appointment h1 {
+  font-size: 2rem;
 }
 
 .insta {
@@ -253,11 +416,164 @@ label,
 
 @media screen and (min-width: 768px) {
   .landing-page {
-    height: 40em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    background: linear-gradient(90deg, #ea5258, #f07676);
+    width: 100%;
+    height: 35em;
+    place-items: end start;
+  }
+  .landing-page img {
+    width: 90%;
+    place-self: end center;
+    grid-row: 1/3;
+  }
+  .landing-page a {
+    display: block;
+    place-self: center start;
+    margin: 3em;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #ffffff;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+  }
+  .landing-page a:hover {
+    background: white;
+    color: #ea5258;
+    transition: 0.4s;
+  }
+  .landing-page div {
+    display: block;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    place-self: center start;
+    margin: 1em;
+  }
+  .landing-page div h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .landing-page div p {
+    font-family: "Montserrat", sans-serif;
+    margin: 1em auto 1em;
+    color: #fff;
+  }
+  .features {
+    margin: auto 30vw;
+  }
+  .features img {
+    width: 70%;
+  }
+  .features span {
+    place-self: center;
+  }
+  .headingg h1 {
+    font-size: 8rem;
+  }
+  .headingg p {
+    font-size: 2.5rem;
+    line-height: 1.8;
+  }
+  .grid-fill {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .services {
+    background: url("../../assets/gal3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+  }
+  .services1 {
+    position: relative;
+  }
+  .services1 video {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .services1 .hidee {
+    display: block;
+  }
+  .testimo {
+    grid-template-columns: auto auto;
+  }
+  .appointment {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .appointment div:nth-child(1) {
+    grid-column: 1/-1;
+  }
+  .appointment div:nth-child(2) {
+    grid-column: 1/2;
+  }
+  .appointment div:nth-child(3) {
+    grid-column: 2/3;
+  }
+  .appointment div:nth-child(4) {
+    grid-column: 3/4;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-page {
+    height: 50em;
+  }
+  .landing-page div {
+    margin: 3em 5em 3em 3em;
+  }
+  .landing-page div h1 {
+    font-size: 4rem;
   }
   .landing-page img {
     width: auto;
-    height: 35em;
+    height: 45em;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: column;
+    /* or 'row', 'row dense', 'column dense' */
+    margin: 0;
+    margin-top: 2em;
+  }
+  .features .mini img {
+    width: 5em;
+  }
+  .youtube {
+    grid-template-columns: 1fr auto;
+    column-gap: 3em;
+  }
+  .youtube div:nth-of-type(1) {
+    grid-row: 1/-1;
+    grid-column: 2/3;
+    width: 35em;
+  }
+  .youtube div:nth-of-type(2) {
+    grid-column: 1/2;
+  }
+  .des {
+    margin-top: 4em;
+  }
+  .gallery {
+    grid-template-columns: 23vw 23vw 23vw;
+    grid-template-rows: 23vw 23vw;
+  }
+  .book-now .steps {
+    margin-top: 2em;
+    row-gap: 1.5em;
+  }
+  .book-now .steps .circle {
+    font-size: 3rem;
+    color: #fa7c30;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,69 +15,173 @@
   </head>
   <body>
     <div class="logo"><img src="./assets/logo.png" alt="" /></div>
+    <!-- <nav>
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Appointment</li>
+        <li>Contact</li>
+      </ul>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid" style="justify-content: end">
+        <button
+          style="outline: none; box-shadow: none"
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" style="text-align: center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <section class="landing-page">
       <img src="./assets/simran.png" alt="" />
+      <div>
+        <h1>Life's moments are too important.</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+          consequatur excepturi totam dignissimos cum nesciunt consequuntur
+          quas.
+        </p>
+      </div>
+      <a href="">Book an Appointment</a>
     </section>
 
-    <h1 style="text-align: center; font-family: Montserrat, sans-serif; margin-top: 2em; ">
-      Life's moments are too important.
-    </h1>
     <div class="headingg">
       <h1>Experience</h1>
       <p>Belle Salon</p>
     </div>
 
-    <section class="features">
-      <img src="./assets/hand_42-512_38015 (1) 4.png" alt="" />
-      <span>Clear Communication</span>
-      <img src="./assets/project-icon-png 4.png" alt="" />
-      <span>Super hair Services</span>
-      <img src="./assets/SeekPng 4.png" alt="" />
-      <span>Friendly Environment</span>
-    </section>
+    <div class="grid-fill">
+      <div>
+        <img src="./assets/gal1.jpg" alt="" />
+        <p>Clear communication</p>
+      </div>
+      <div>
+        <img src="./assets/gal3.jpg" alt="" />
+        <p>Super hair Services</p>
+      </div>
+      <div>
+        <img src="./assets/gal2.jpg" alt="" />
+        <p>Friendly Environment</p>
+      </div>
+    </div>
 
-    <div class="des"><h1>What makes Belle salon great?</h1></div>
-    <section class="youtube">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis,
-        veniam! Id consectetur.
-      </p>
+    <div class="des"></div>
+    <!-- <section class="youtube">
+      <div>
+        <h1>What makes Belle salon great?</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis,
+          veniam! Id consectetur. Lorem ipsum dolor, sit amet consectetur
+          nesciunt natus repellendus, commodi est qui?
+        </p>
+      </div>
       <div class="ratio ratio-16x9">
         <iframe
           src="https://www.youtube.com/embed/_9ibEA3AqDo?controls=0"
           allowfullscreen
         ></iframe>
       </div>
-    </section>
-    <br />
+    </section> -->
 
-    <section class="services">
-      <img src="./assets/hair 1.png" alt="" />
+    <section class="services" style="color: white">
+      <!-- <img class="hidee" src="./assets/20220204_135942.jpg" alt="" /> -->
 
       <h1>Our Services</h1>
       <p>Bringing out the Beauty in you, since 2005</p>
       <div class="gallery">
-        <img src="./assets/spa1.png" alt="" />
-        <div class="box"></div>
-        <img src="./assets/spa3.png" alt="" />
-        <div class="box"></div>
-        <img src="./assets/spa4.png" alt="" />
-        <div class="box"></div>
+        <img
+          src="./assets/img3.jpg"
+          alt=""
+        />
+        <div class="box"><span>Haircut</span></div>
+        <img
+          src="./assets/img2.jpg"
+          alt=""
+        />
+        <div class="box"><span>Medicure</span></div>
+        <img
+          src="./assets/img1.jpg"
+          alt=""
+        />
+        <div class="box">
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+            ><span>More </span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="services">
-      <img src="./assets/aaaa 1.png" alt="" />
+    <section class="services1">
+      <video
+        class="hidee"
+        src="./assets/20220204_135812.mp4"
+        autoplay
+        loop
+        playsinline
+        muted
+      ></video>
 
-      <h1>Belle Salol</h1>
+      <h1>Belle Salon</h1>
       <p>Since 2005</p>
       <div class="gallery">
-        <img src="./assets/spa1.png" alt="" />
-        <div class="box"></div>
-        <img src="./assets/spa3.png" alt="" />
-        <div class="box"></div>
-        <img src="./assets/spa4.png" alt="" />
-        <div class="box"></div>
+        <img src="./assets/DSC05140.JPG" alt="" />
+        <div class="box"><span>Skin care</span></div>
+        <img src="./assets/DSC05137.JPG" alt="" />
+        <div class="box"><span>Hair services</span></div>
+        <img src="./assets/DSC05143.JPG" alt="" />
+        <div class="box">
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+            ><span>More </span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -86,7 +190,7 @@
         <h1>Schedule</h1>
         <p>Booking</p>
       </div>
-      <p>Receive 20% off on your first appointment!</p>
+      <p>It's easy, Receive 20% off on your first appointment!</p>
       <div class="steps">
         <span class="circle">1</span>
         <span class="circle">2</span>
@@ -102,6 +206,7 @@
     <h1 style="font-family: EB Garamond, serif; margin: 1.5em 1em 0em 5vw">
       Follow us on Instagram
     </h1>
+    <br />
     <div class="insta">
       <blockquote
         class="instagram-media"
@@ -378,9 +483,10 @@
           </p>
         </div>
       </blockquote>
+
       <blockquote
         class="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/p/CZRyqiBpNtR/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-permalink="https://www.instagram.com/p/CYrUzr9pwYJ/?utm_source=ig_embed&amp;utm_campaign=loading"
         data-instgrm-version="14"
         style="
           background: #fff;
@@ -399,7 +505,7 @@
       >
         <div style="padding: 16px">
           <a
-            href="https://www.instagram.com/p/CZRyqiBpNtR/?utm_source=ig_embed&amp;utm_campaign=loading"
+            href="https://www.instagram.com/p/CYrUzr9pwYJ/?utm_source=ig_embed&amp;utm_campaign=loading"
             style="
               background: #ffffff;
               line-height: 0;
@@ -637,7 +743,7 @@
             "
           >
             <a
-              href="https://www.instagram.com/p/CZRyqiBpNtR/?utm_source=ig_embed&amp;utm_campaign=loading"
+              href="https://www.instagram.com/p/CYrUzr9pwYJ/?utm_source=ig_embed&amp;utm_campaign=loading"
               style="
                 color: #c9c8cd;
                 font-family: Arial, sans-serif;
@@ -653,9 +759,10 @@
           </p>
         </div>
       </blockquote>
+
       <blockquote
         class="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/p/CXQQbTsFeDA/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-permalink="https://www.instagram.com/p/CKEMimipBOI/?utm_source=ig_embed&amp;utm_campaign=loading"
         data-instgrm-version="14"
         style="
           background: #fff;
@@ -674,7 +781,7 @@
       >
         <div style="padding: 16px">
           <a
-            href="https://www.instagram.com/p/CXQQbTsFeDA/?utm_source=ig_embed&amp;utm_campaign=loading"
+            href="https://www.instagram.com/p/CKEMimipBOI/?utm_source=ig_embed&amp;utm_campaign=loading"
             style="
               background: #ffffff;
               line-height: 0;
@@ -912,7 +1019,7 @@
             "
           >
             <a
-              href="https://www.instagram.com/p/CXQQbTsFeDA/?utm_source=ig_embed&amp;utm_campaign=loading"
+              href="https://www.instagram.com/p/CKEMimipBOI/?utm_source=ig_embed&amp;utm_campaign=loading"
               style="
                 color: #c9c8cd;
                 font-family: Arial, sans-serif;
@@ -928,9 +1035,10 @@
           </p>
         </div>
       </blockquote>
+
       <blockquote
         class="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/p/CX53iDXlqIO/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-permalink="https://www.instagram.com/p/CKjRF7-p9Ej/?utm_source=ig_embed&amp;utm_campaign=loading"
         data-instgrm-version="14"
         style="
           background: #fff;
@@ -949,7 +1057,7 @@
       >
         <div style="padding: 16px">
           <a
-            href="https://www.instagram.com/p/CX53iDXlqIO/?utm_source=ig_embed&amp;utm_campaign=loading"
+            href="https://www.instagram.com/p/CKjRF7-p9Ej/?utm_source=ig_embed&amp;utm_campaign=loading"
             style="
               background: #ffffff;
               line-height: 0;
@@ -1187,7 +1295,7 @@
             "
           >
             <a
-              href="https://www.instagram.com/p/CX53iDXlqIO/?utm_source=ig_embed&amp;utm_campaign=loading"
+              href="https://www.instagram.com/p/CKjRF7-p9Ej/?utm_source=ig_embed&amp;utm_campaign=loading"
               style="
                 color: #c9c8cd;
                 font-family: Arial, sans-serif;
@@ -1204,58 +1312,69 @@
         </div>
       </blockquote>
     </div>
+    <br />
 
     <section class="testimo">
-      <h1>Testimonials</h1>
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit
-              ipsam similique porro est excepturi, perferendis libero
-              consequatur! Dolore necessitatibus error quibusdam explicabo
-              quaerat cupiditate minima, dicta tenetur quos rerum!
-            </p>
-          </div>
-          <div class="carousel-item">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit
-              ipsam similique porro est excepturi, perferendis libero
-              consequatur! Dolore necessitatibus error quibusdam explicabo
-              quaerat cupiditate minima, dicta tenetur quos rerum!
-            </p>
-          </div>
-          <div class="carousel-item">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit
-              ipsam similique porro est excepturi, perferendis libero
-              consequatur! Dolore necessitatibus error quibusdam explicabo
-              quaerat cupiditate minima, dicta tenetur quos rerum!
-            </p>
-          </div>
+      <div class="testi-border">
+        <div class="testi">
+          <img src="./assets/simran-testi.png" alt="" />
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
+      </div>
+      <div>
+        <div class="headingg">
+          <h1>Reviews</h1>
+          <p>Reviews</p>
+        </div>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                odit ipsam similique porro est excepturi, perferendis libero
+                consequatur! Dolore necessitatibus error quibusdam explicabo
+                quaerat cupiditate minima, dicta tenetur quos rerum!
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                odit ipsam similique porro est excepturi, perferendis libero
+                consequatur! Dolore necessitatibus error quibusdam explicabo
+                quaerat cupiditate minima, dicta tenetur quos rerum!
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                odit ipsam similique porro est excepturi, perferendis libero
+                consequatur! Dolore necessitatibus error quibusdam explicabo
+                quaerat cupiditate minima, dicta tenetur quos rerum!
+              </p>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -1271,7 +1390,7 @@
     </section>
 
     <section class="appointment">
-      <h1>Receive 20% off on your first appointment!</h1>
+      <div><h1>Receive 20% off on your first appointment!</h1></div>
       <div class="form__group">
         <input
           type="email"
@@ -1293,6 +1412,60 @@
       <div class="bttn">Contact us</div>
     </section>
 
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Skin Services:</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Clean ups</li>
+              <li>Threading</li>
+              <li>Foot Reflexology</li>
+              <li>D-Tan</li>
+              <li>Facials</li>
+              <li>Bleach</li>
+              <li>Skin Treatments</li>
+              <li>Deep Exfoliation</li>
+              <li>Waxing</li>
+              <li>Pedicure</li>
+              <li>Manicure</li>
+              <li>Spa Pedicure</li>
+              <li>Spa Manicure</li>
+              <li>Body Polishing</li>
+              <li>Under arm lightening</li>
+              <li>Lip Lightening</li>
+              <li>Kids Spa</li>
+              <li>Pre Bridal skin Packages</li>
+              <li>Head to Toe Packages</li>
+            </ul>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
